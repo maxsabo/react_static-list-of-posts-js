@@ -1,7 +1,6 @@
+import './PostInfo.scss';
 import { UserInfo } from '../UserInfo/UserInfo';
 import { CommentList } from '../CommentList/CommentList';
-
-import './PostInfo.scss';
 
 export const PostInfo = ({ post }) => (
   <div className="PostInfo">
@@ -16,7 +15,6 @@ export const PostInfo = ({ post }) => (
 
     <p className="PostInfo__body">{post.body}</p>
 
-    <hr />
     {post.comments.length > 0 ? (
       <CommentList comments={post.comments} />
     ) : (
